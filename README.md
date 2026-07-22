@@ -1,2 +1,2 @@
-# eventsphere
-Cloud-native Event Management Platform built using Java, Spring Boot and modern backend engineering practices.
+# synapse
+Cloud-native platform for managing conferences, workshops, hackathons and community events.
