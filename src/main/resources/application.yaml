@@ -1,3 +1,14 @@
 spring:
   application:
     name: synapse
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/synapse
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: test
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
