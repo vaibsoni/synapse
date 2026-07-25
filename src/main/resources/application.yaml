@@ -16,7 +16,7 @@ spring:
       hibernate:
         format_sql=true
 
-#-------Dependency for flyway------------
+#------------flyway------------
   flyway:
     enabled: true
 
