@@ -13,7 +13,8 @@ public record UserResponse(
         String email,
         String phoneNumber,
         UserRole role,
-        LocalDateTime createdAt
+        LocalDateTime createdAt,
+        LocalDateTime updatedAt
 
 ) {
 }
