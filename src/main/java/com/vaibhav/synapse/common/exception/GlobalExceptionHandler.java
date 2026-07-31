@@ -60,7 +60,8 @@ public class GlobalExceptionHandler {
         ErrorResponse error = ErrorResponse.builder()
                 .timestamp(LocalDateTime.now())
                 .status(HttpStatus.CONFLICT.value())
-                .error("Conflict")
+                .error(HttpStatus.CONFLICT.getReasonPhrase())//Every HTTP status code has: A numeric code & A standard textual
+                // description (called the Reason Phrase) Eg, for HttpStatus.OK it is "OK", for HttpStatus.CREATED, it is "Created".
                 .message(ex.getMessage())
                 .path(request.getDescription(false).replace("uri=", ""))
                 .build();
