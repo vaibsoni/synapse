@@ -1,6 +1,8 @@
 package com.vaibhav.synapse.user.exception;
 
-public class UserAlreadyExistsException extends RuntimeException{
+import com.vaibhav.synapse.common.exception.ResourceAlreadyExistsException;
+
+public class UserAlreadyExistsException extends ResourceAlreadyExistsException {
 
 
     public UserAlreadyExistsException() {
